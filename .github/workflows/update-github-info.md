@@ -1,7 +1,7 @@
 ---
 name: update-github-info
 description: Refresh Mona's GitHub Info page with useful updates from the GitHub Blog, Changelog, and Awesome Copilot workflows.
-model: gpt-4
+model: copilot-completions/gpt-4
 engine:
   id: copilot
   copilot-sdk: true
