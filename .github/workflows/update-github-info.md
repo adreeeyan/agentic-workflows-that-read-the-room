@@ -1,6 +1,6 @@
 ---
 name: update-github-info
-description: Refresh Mona's GitHub Info page with useful updates from the GitHub Blog and Changelog.
+description: Refresh Mona's GitHub Info page with useful updates from the GitHub Blog, Changelog, and Awesome Copilot workflows.
 on:
   schedule: daily
   workflow_dispatch:
@@ -19,6 +19,7 @@ network:
     - defaults
     - github.blog
     - github.com
+    - awesome-copilot.github.com
 ---
 
 # Update GitHub Info
@@ -29,6 +30,7 @@ network:
 2. Use the web-fetch tool to read:
    - https://github.blog/latest/
    - https://github.blog/changelog/
+   - https://awesome-copilot.github.com/workflows/
 3. Identify recent, factual updates that are useful to developers and fit Mona's editorial angle. Prefer practical information; do not repeat existing content or infer details not supported by the sources.
 4. Update `site/content/github-info.md` with concise summaries and links to the relevant source pages. Preserve the existing themes and structure where practical.
 5. If the file changed, submit the patch using the configured `create-pull-request` safe output. Open a pull request for Mona to review, with a clear title and a body summarizing the changes and linking to the source pages. Do not write directly to the default branch or use another write mechanism.
