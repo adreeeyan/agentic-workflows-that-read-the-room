@@ -1,6 +1,10 @@
 ---
 name: update-github-info
 description: Refresh Mona's GitHub Info page with useful updates from the GitHub Blog, Changelog, and Awesome Copilot workflows.
+model: gpt-5-mini
+engine:
+  id: copilot
+  copilot-sdk: true
 on:
   schedule: daily
   workflow_dispatch:
